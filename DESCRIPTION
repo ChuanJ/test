@@ -1,0 +1,42 @@
+Package: test
+Type: Package
+Title: Analysing Illumina HumanMethylation BeadChip Data
+Version: 1.18.0
+Date: 2019-04-23
+Author: Belinda Phipson and Jovana Maksimovic 
+Maintainer: Belinda Phipson <belinda.phipson@mcri.edu.au>, Jovana
+ Maksimovic <jovana.maksimovic@mcri.edu.au>,
+ Andrew Lonsdale <andrew.lonsdale@mcri.edu.au>
+Depends: R (>= 2.3.0)
+Imports: limma, minfi, methylumi, IlluminaHumanMethylation450kmanifest,
+        statmod, ruv, stringr,
+        IlluminaHumanMethylation450kanno.ilmn12.hg19, org.Hs.eg.db,
+        AnnotationDbi, BiasedUrn, GO.db,
+        IlluminaHumanMethylationEPICmanifest,
+        IlluminaHumanMethylationEPICanno.ilm10b4.hg19
+VignetteBuilder: knitr
+Suggests: minfiData, BiocStyle, knitr, rmarkdown, edgeR,
+        tweeDEseqCountData
+Description: Normalisation and testing for differential variability and
+	differential methylation for data from Illumina's Infinium 
+	HumanMethylation450 array. The normalisation procedure is 
+	subset-quantile within-array normalisation (SWAN), which allows 
+	Infinium I and II type probes on a single array to be normalised 
+	together. The test for differential variability is based on an 
+	empirical Bayes version of Levene's test. Differential
+	methylation testing is performed using RUV, which can adjust for
+	systematic errors of unknown origin in high-dimensional data by
+ 	using negative control probes. Gene ontology analysis is performed
+ 	by taking into account the number of probes per gene on the
+ 	array.
+License: GPL-2
+biocViews: Normalization, DNAMethylation, MethylationArray,
+        GenomicVariation, GeneticVariability, DifferentialMethylation,
+        GeneSetEnrichment
+git_url: https://git.bioconductor.org/packages/missMethyl
+git_branch: RELEASE_3_9
+git_last_commit: e6beb9e
+git_last_commit_date: 2019-05-02
+Date/Publication: 2019-05-02
+NeedsCompilation: no
+Packaged: 2019-05-03 01:06:52 UTC; biocbuild

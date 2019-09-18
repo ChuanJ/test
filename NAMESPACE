@@ -1,0 +1,19 @@
+import(limma)
+import(minfi)
+import(methylumi)
+import(IlluminaHumanMethylation450kmanifest)
+import(statmod)
+import(ruv)
+import(stringr)
+import(IlluminaHumanMethylation450kanno.ilmn12.hg19)
+import(org.Hs.eg.db)
+import(BiasedUrn)
+import(GO.db)
+import(IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
+import(IlluminaHumanMethylationEPICmanifest)
+import(AnnotationDbi)
+
+export(SWAN, densityByProbeType, varFit, topVar, getLeveneResiduals,
+       SWAN.MethyLumiSet, SWAN.RGChannelSet, SWAN.default, varFit.MethylSet,
+       varFit.DGEList, varFit.default, contrasts.varFit, RUVfit, RUVadj, 
+       topRUV, getINCs, gometh, gsameth, topGSA, getMappedEntrezIDs,getAdj)
